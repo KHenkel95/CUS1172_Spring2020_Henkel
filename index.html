@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head lang="en">
     <meta charset="utf-8">
     <title>Spring 2020 CUS1172 Project Ken Henkel </title>
@@ -10,30 +10,46 @@
 
     <script src="cus1172_ken_henkel_quiz_app.js"></script>
 
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 <body>
 
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" id="title">
     <h1>Quiz App</h1>
     <p id="score">This is the beginning of the quiz app</p>
 </div>
 
-<div class="container h-100">
+<div class="container h-100" id="intro">
     <div class ="row align-items-center h-100">
         <div class="col-6 mx-auto">
-            <div id="app_widget" class="alight-items-center">
-                <h1 id="name">Please enter your name:</h1>
-                <input type="text" placeholder="Type your name" name="name_field" id="name_input">
-                <ul id="quiz_selection">
-                    <li>Java Quiz</li>
-                    <li>HTML Quiz</li>
-                </ul>
 
-            </div>
+            <h1 id="name">Please enter your name:</h1>
+            <input type="text" placeholder="Type your name" name="name_field" id="name_input">
+            <button name="Enter" id="name_button" onclick="clickEnter()">Enter</button>
+
         </div>
     </div>
+</div>
 
+<div class="container h-100" id="quiz_menu">
+    <div class ="row align-items-center h-100">
+        <div class="col-6 mx-auto">
+
+        <button name="Java"  id="java_button" onclick="javaClick()">Java</button>
+        <button name="Golang"  id="golang_button" onclick="golangClick()">Golang</button>
+
+        </div>
+    </div>
+</div>
+
+<div class="container h-100" id="quiz_view">
+    <div class ="row align-items-center h-100">
+        <div class="col-6 mx-auto">
+
+        </div>
+    </div>
 </div>
 
 </body>
