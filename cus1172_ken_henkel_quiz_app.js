@@ -31,15 +31,17 @@ function javaClick(){
     element.parentNode.removeChild(element);
     element = document.querySelector("#name");
     element.parentNode.removeChild(element);
+    //makes the quiz view visible
+    document.getElementById("quiz_view").style.visibility = "visible";
 }
 
 function golangClick(){
     quizchoice = "golang";
-    quizchoice = "java";
     element = document.querySelector("#quiz_menu");
     element.parentNode.removeChild(element);
     element = document.querySelector("#name");
     element.parentNode.removeChild(element);
+    //makes the quiz view visible
     document.getElementById("quiz_view").style.visibility = "visible";
 }
 
