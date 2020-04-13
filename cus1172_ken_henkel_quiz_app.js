@@ -1,13 +1,21 @@
 
 window.onload = loadJson
-username = ""
+/*username = ""
 quizchoice = ""
-function loadJson(){
+question = ""
+userAnswer = ""
+answer = ""
+hint = ""*/
+async function loadJson(){
+    json = null;
     document.getElementById("quiz_menu").style.visibility = "hidden";
     document.getElementById("quiz_view").style.visibility = "hidden";
-    fetch('https://my-json-server.typicode.com/KHenkel95/quizdata/db')
-        .then(response => response.json())
-        .then(json => console.log(json))
+    response = await fetch('https://my-json-server.typicode.com/KHenkel95/quizdata/db')
+        if (response.ok){
+            json=await response.json()
+        }
+    counter = 0;
+    //quiz = JSON.parse('https://my-json-server.typicode.com/KHenkel95/quizdata/db');
 }
 
 function clickEnter(){
@@ -23,16 +31,21 @@ function clickEnter(){
     element.parentNode.removeChild(element);
     //makes the quiz menu visible
     document.getElementById("quiz_menu").style.visibility = "visible";
+    console.log(json)
 }
 
-function javaClick(){
+function startJavaQuiz(){
+    score = 0;
     quizchoice = "java";
-    element = document.querySelector("#quiz_menu");
-    element.parentNode.removeChild(element);
+    document.getElementById("mc_buttons").style.visibility = "hidden";
+    document.getElementById("fib_input").style.visibility = "hidden";
+    quizMenuElement = document.querySelector("#quiz_menu");
+    quizMenuElement.parentNode.removeChild(quizMenuElement);
     element = document.querySelector("#name");
     element.parentNode.removeChild(element);
     //makes the quiz view visible
     document.getElementById("quiz_view").style.visibility = "visible";
+    getNextQuestion();
 }
 
 function golangClick(){
@@ -43,6 +56,74 @@ function golangClick(){
     element.parentNode.removeChild(element);
     //makes the quiz view visible
     document.getElementById("quiz_view").style.visibility = "visible";
+}
+
+function checkQuestionType(){
+    console.log(json);
+    if(json.java.questions[counter].question_type==="mc") {
+        document.getElementById("mc_buttons").style.visibility = "visible";
+    }
+    else{
+        document.getElementById("fib_input").style.visibility = "visible";
+    }
+}
+
+function onMcClick(){
+    userAnswer = null;
+    if(this.caller==="#a_button"){
+        userAnswer = "A";
+    }
+    if(this.caller==="#b_button"){
+        userAnswer = "B";
+    }
+    if(this.caller==="#c_button"){
+        userAnswer = "C";
+    }
+    if(this.caller==="#d_button"){
+        userAnswer = "D";
+    }
+}
+
+function fibEnter(){
+    userAnswer = document.querySelector("#fib_input");
+}
+
+function checkAnswer(answer){
+    if(answer !== json.java.questions[counter].answer){
+        document.createElement("p").innerHTML = "INCORRECT: Sorry, you answered this incorrectly. HINT:" + json.java.questions[counter].hint;
+    }
+    else{
+        setTimeout(function(){
+            document.querySelector("#quiz_view").innerHTML = "Correct!";
+        },1000 );
+        score++;
+    }
+}
+
+function getNextQuestion(){
+    /*console.log(json);
+    if(json.java.questions[counter].question_type==="mc"){
+        document.getElementById("mc_buttons").style.visibility = "visible";
+        //document.getElementById("question").innerHTML = currentQuestion.question;
+    }*/
+
+    if(quizchoice==="java"){
+        currentQuestion = json.java.questions[counter]
+        checkQuestionType()
+    }
+    else{
+        alert("not implemented")
+    }
+    document.getElementById("question").innerHTML = currentQuestion.question;
+    counter++;
+}
+
+function quiz_activity(){
+
+    for(let i = 1; i <= 20; i++){
+
+    }
+
 }
 
 /*
