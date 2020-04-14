@@ -1,11 +1,6 @@
 
 window.onload = loadJson
-/*username = ""
-quizchoice = ""
-question = ""
-userAnswer = ""
-answer = ""
-hint = ""*/
+
 async function loadJson(){
     json = null;
     document.getElementById("quiz_menu").style.visibility = "hidden";
@@ -15,15 +10,11 @@ async function loadJson(){
             json=await response.json()
         }
     counter = 0;
-    //quiz = JSON.parse('https://my-json-server.typicode.com/KHenkel95/quizdata/db');
 }
 
 function clickEnter(){
     username = document.querySelector("#name_input").value;
     document.querySelector("#name").innerHTML = "Hello " + document.querySelector("#name_input").value + ", please choose a quiz:";
-    //commented these out in order to remove
-    //document.getElementById("name_input").style.visibility = "hidden";
-    //document.getElementById("name_button").style.visibility = "hidden";
     //removes the input bar and button
     element = document.getElementById("name_input");
     element.parentNode.removeChild(element);
@@ -118,19 +109,3 @@ function endQuiz(){
 function updateScoreboard(){
     document.querySelector('#score').innerHTML="Score: " + score + " out of 20"
 }
-
-/*
-document.addEventListener('DOMContentLoaded', function() {
-
-    document.querySelector('#java_button').onclick = function() {
-        quizchoice = "java";
-    }
-    document.querySelector('#golang_button').onclick = function(){
-        quizchoice = "golang";
-    }
-    element = document.getElementById("java_button");
-    element.parentNode.removeChild(element);
-    element = document.getElementById("golang_button");
-    element.parentNode.removeChild(element);
-
-})*/
