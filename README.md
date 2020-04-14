@@ -13,6 +13,7 @@ Summary: This quiz app implements the ability to choose between two quizzes and 
 •	CSS & Bootstrap style: Minimally implemented
 •	5 styles of questions: Implemented 2
 •	Answers checked, positive message if correct, hint if incorrect: Fully Implemented
-Links:
-https://github.com/KHenkel95/CUS1172_Spring2020_Henkel
+
+The deployment of this application was rather simple using Netlify. I signed in using github and installed Netlify to my project repository.It then uploaded my project to this link seen here: https://vigorous-raman-2807f1.netlify.com/
+
 https://vigorous-raman-2807f1.netlify.com/
