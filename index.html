@@ -37,8 +37,8 @@
     <div class ="row align-items-center h-100">
         <div class="col-6 mx-auto">
 
-        <button name="Java"  id="java_button" onclick="startJavaQuiz()">Java</button>
-        <button name="Golang"  id="golang_button" onclick="golangClick()">Golang</button>
+        <button name="Java"  id="java_button" onclick="startQuiz('java')">Java</button>
+        <button name="Golang"  id="golang_button" onclick="startQuiz('golang')">Golang</button>
 
         </div>
     </div>
@@ -48,14 +48,14 @@
     <div class ="row align-items-center h-100">
         <div class="col-6 mx-auto" id="quiz">
 
-
+            <div id="result"></div>
             <p id="question"></p>
 
             <div id="mc_buttons">
-                <button name="a" id="a_button" onclick="onMcClick()" >A.</button>
-                <button name="b" id="b_button" onclick="onMcClick()">B.</button>
-                <button name="c" id="c_button" onclick="onMcClick()">C.</button>
-                <button name="d" id="d_button" onclick="onMcClick()">D.</button>
+                <button name="a" id="a_button" onclick="checkAnswer('A')" >A.</button>
+                <button name="b" id="b_button" onclick="checkAnswer('B')">B.</button>
+                <button name="c" id="c_button" onclick="checkAnswer('C')">C.</button>
+                <button name="d" id="d_button" onclick="checkAnswer('D')">D.</button>
             </div>
             <div id="fib_input">
                 <input type="text" placeholder="Type your answer in lowercase" name="fib_space" id="fib_space">

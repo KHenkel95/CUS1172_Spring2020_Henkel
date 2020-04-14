@@ -34,9 +34,9 @@ function clickEnter(){
     console.log(json)
 }
 
-function startJavaQuiz(){
+function startQuiz(quizChoice){
     score = 0;
-    quizchoice = "java";
+    quizchoice = quizChoice;
     document.getElementById("mc_buttons").style.visibility = "hidden";
     document.getElementById("fib_input").style.visibility = "hidden";
     quizMenuElement = document.querySelector("#quiz_menu");
@@ -45,85 +45,78 @@ function startJavaQuiz(){
     element.parentNode.removeChild(element);
     //makes the quiz view visible
     document.getElementById("quiz_view").style.visibility = "visible";
+    updateScoreboard();
     getNextQuestion();
 }
 
-function golangClick(){
-    quizchoice = "golang";
-    element = document.querySelector("#quiz_menu");
-    element.parentNode.removeChild(element);
-    element = document.querySelector("#name");
-    element.parentNode.removeChild(element);
-    //makes the quiz view visible
-    document.getElementById("quiz_view").style.visibility = "visible";
-}
-
 function checkQuestionType(){
+    question_type = null
     console.log(json);
-    if(json.java.questions[counter].question_type==="mc") {
+    if(currentQuestion.question_type==="mc") {
+        question_type = "mc";
         document.getElementById("mc_buttons").style.visibility = "visible";
     }
     else{
+        question_type = "fib";
+        document.getElementById("fib_space").value = "";
         document.getElementById("fib_input").style.visibility = "visible";
     }
-}
-
-function onMcClick(){
-    userAnswer = null;
-    if(this.caller==="#a_button"){
-        userAnswer = "A";
-    }
-    if(this.caller==="#b_button"){
-        userAnswer = "B";
-    }
-    if(this.caller==="#c_button"){
-        userAnswer = "C";
-    }
-    if(this.caller==="#d_button"){
-        userAnswer = "D";
-    }
+    return question_type;
 }
 
 function fibEnter(){
-    userAnswer = document.querySelector("#fib_input");
+    return checkAnswer(document.querySelector("#fib_space").value);
 }
 
 function checkAnswer(answer){
-    if(answer !== json.java.questions[counter].answer){
-        document.createElement("p").innerHTML = "INCORRECT: Sorry, you answered this incorrectly. HINT:" + json.java.questions[counter].hint;
+    console.log("answer inputed: " + answer);
+    console.log("expected answer : " + currentQuestion.answer);
+    if(answer !== currentQuestion.answer){
+        document.querySelector("#result").innerHTML = "INCORRECT: Sorry, you answered this incorrectly. HINT:" + currentQuestion.hint;
+
     }
     else{
+        document.getElementById("mc_buttons").style.visibility = "hidden";
+        document.getElementById("fib_input").style.visibility = "hidden";
+        document.querySelector("#result").innerHTML = "Correct!";
         setTimeout(function(){
-            document.querySelector("#quiz_view").innerHTML = "Correct!";
+            document.querySelector("#result").innerHTML = "";
+            score++;
+            updateScoreboard();
+            getNextQuestion();
         },1000 );
-        score++;
+
     }
 }
 
 function getNextQuestion(){
-    /*console.log(json);
-    if(json.java.questions[counter].question_type==="mc"){
-        document.getElementById("mc_buttons").style.visibility = "visible";
-        //document.getElementById("question").innerHTML = currentQuestion.question;
-    }*/
 
     if(quizchoice==="java"){
         currentQuestion = json.java.questions[counter]
-        checkQuestionType()
+
     }
     else{
-        alert("not implemented")
+        currentQuestion = json.golang.questions[counter]
     }
-    document.getElementById("question").innerHTML = currentQuestion.question;
-    counter++;
+    if(currentQuestion===undefined){
+        endQuiz();
+    }
+    else{
+        document.getElementById("question").innerHTML = currentQuestion.question;
+        checkQuestionType();
+        counter++;
+    }
 }
 
-function quiz_activity(){
+function endQuiz(){
 
-    for(let i = 1; i <= 20; i++){
+    alert("End quiz");
+    counter = 0;
 
-    }
+}
 
+function updateScoreboard(){
+    document.querySelector('#score').innerHTML="Score: " + score + " out of 20"
 }
 
 /*
