@@ -1,0 +1,61 @@
+{
+  "quiz_question_data": [
+    {
+      "quizId": "100",
+      "questions": [
+        {
+          "data": {
+            "id" : "1000",
+            "question_type" : "multiple_choice",
+            "question" : "What is 1+1 equals to?",
+            "answer_options" : ["1","2","3","4"]
+          },
+
+          "meta" : {
+            "next_question": "1001"
+          }
+        },
+        {
+          "data": {
+            "id" : "1001",
+            "question_type" : "multiple_choice",
+            "question" : "What is 1+1 equals to?",
+            "answer_options" : ["1","2","3","4"]
+          },
+
+          "meta" : {
+            "next_question": "-1"
+          }
+        }
+      ]},
+    {
+      "quizId": "200",
+      "questions": [
+        {
+          "data": {
+            "id" : "2000",
+            "question_type" : "multiple_choice",
+            "question" : "What is 1+1 equals to?",
+            "answer_options" : ["1","2","3","4"]
+          },
+
+          "meta" : {
+            "next_question": "2001"
+          }
+        },
+        {
+          "data": {
+            "id" : "2001",
+            "question_type" : "multiple_choice",
+            "question" : "What is 1+1 equals to?",
+            "answer_options" : ["1","2","3","4"]
+          },
+
+          "meta" : {
+            "next_question": "-1"
+          }
+        }
+      ]
+    }
+  ]
+}

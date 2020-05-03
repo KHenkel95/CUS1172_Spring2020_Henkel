@@ -1,1 +1,163 @@
+{
+  "java": {
 
+    "questions": [{
+      "id": 1,
+      "question_type": "fib",
+      "question": "Java is a ______ Oriented language",
+      "answer": "object",
+      "hint": "Java works around structures called objects"
+    },
+      {
+        "id": 2,
+        "question_type": "mc",
+        "question": "The correct syntax to print hello world is: A. Print(hello world) B. Print(“Hello world”); C. System.out(“Hello world”); D. System.out.print(“Hello world”)",
+        "answer": "D",
+        "hint": "You want to call the Systems “out” method and “print” it to the console"
+      },
+      {
+        "id": 3,
+        "question_type": "fib",
+        "question": "What primitive data structure holds a non-floating point number?",
+        "answer": "int",
+        "hint": "The primitive for an integer"
+      },
+      {
+        "id": 4,
+        "question_type": "mc",
+        "question": "When writing a String backslash-____ is an escape sequence for a new line A. u, B. q C. n D. s",
+        "answer": "C",
+        "hint": "To call a new line, you’d want to use this escape character"
+      },
+      {
+        "id": 5,
+        "question_type": "mc",
+        "question": "Java runs on the Java ____ Machine A. Virtual B. Async C. Old D. Digital",
+        "answer": "A",
+        "hint": "Java is run using a virtualized machine"
+      },
+      {
+        "id": 6,
+        "question_type": "fib",
+        "question": "Java was developed at a company called ___ Microsystems",
+        "answer": "sun",
+        "hint": "Some might say this company rose everyday, much like something in the sky"
+      },
+      {
+        "id": 7,
+        "question_type": "mc",
+        "question": "A line of java ends with a: A. ; B. > C. // D. =",
+        "answer": "A",
+        "hint": "You use this when the line is complete, not when its “semi” done"
+      },
+      {
+        "id": 8,
+        "question_type": "fib",
+        "question": "When a double is converted to an int, it is round in which direction?",
+        "answer": "down",
+        "hint": "Which way is the ground?"
+      },
+      {
+        "id": 9,
+        "question_type": "mc",
+        "question": "Question: To make a comment in java, you would use: A. <! B. // C. – D. ~",
+        "answer": "B",
+        "hint": "This would “slash” out the comment"
+      },
+      {
+        "id": 10,
+        "question_type": "fib",
+        "question": "In a method header, the  ____ keyword indicates that the method will not return anything",
+        "answer": "void",
+        "hint": "It will return void"
+      },
+      {
+        "id": 11,
+        "question_type": "mc",
+        "question": "To increment the variable: int i=0; you would use: A. i++; B. I add C. I inc; D. I+2;",
+        "answer": "A",
+        "hint": "++ adds one to a value"
+      },
+      {
+        "id": 12,
+        "question_type": "fib",
+        "question": "The modulus operator returns the _____",
+        "answer": "remainder",
+        "hint": "It is not the Quotient"
+      },
+      {
+        "id": 13,
+        "question_type": "fib",
+        "question": "A function in Java is referred to as a _____",
+        "answer": "method",
+        "hint": ": It is a “method” of doing something"
+      },
+      {
+        "id": 14,
+        "question_type": "mc",
+        "question": "Java is a _____ threaded language A. Hard B. Single C. Invisible D. Multi",
+        "answer": "D",
+        "hint": "Java can use “multi”ple threads"
+      },
+      {
+        "id": 15,
+        "question_type": "mc",
+        "question": "The assignment operator in Java is: A. – B. ~ C. = D. .",
+        "answer": "C",
+        "hint": "Remember to drink vitamin C"
+      },
+      {
+        "id": 16,
+        "question_type": "fib",
+        "question": "In java, arrays start an an index of: __",
+        "answer": "0",
+        "hint": "The number zero"
+      },
+      {
+        "id": 17,
+        "question_type": "fib",
+        "question": "To multiply two numbers, you would use the __ operator",
+        "answer": "*",
+        "hint": "It is not “x”"
+      },
+      {
+        "id": 18,
+        "question_type": "mc",
+        "question": "From the Java Standard Library, you would use the ____ keyword to add it to your project A. Import B. Pkg C. Add D. Library",
+        "answer": "A",
+        "hint": "You need to import it"
+      },
+      {
+        "id": 19,
+        "question_type": "mc",
+        "question": "To initialize an array you would declare the type and this operator: A. { } B. [ ] C. < > D. = =",
+        "answer": "B",
+        "hint": "An array could be kept in a square"
+      },
+      {
+        "id": 20,
+        "question_type": "fib",
+        "question": "To create a new Java class, you would use the keyword _____",
+        "answer": "class",
+        "hint": "You may have learned this in class"
+      }
+    ]
+  },
+
+  "golang": {
+
+    "questions": [{
+      "id": 1,
+      "question_type": "mc",
+      "question": "An acceptable declaration of an array using Go is: A. array[5] integers B. var arr [10]string C. string[5]; d. 5 string[]",
+      "answer": "B"
+    },
+      {
+        "id": 2,
+        "question_type": "fib",
+        "question": "another golang question",
+        "answer": "another notcoolkid"
+      }
+    ]
+  }
+}

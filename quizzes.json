@@ -1,0 +1,14 @@
+{
+  "quizzes": [
+    {
+    "id": "100",
+    "title": "Java Quiz",
+    "description": "Java Quiz for cool enemies of Ken"
+    },
+    {
+      "id": "200",
+      "title": "Golang Quiz",
+      "description": "GoLang Quiz for cool friends of Ken"
+    }
+  ]
+}
