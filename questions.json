@@ -6,9 +6,9 @@
         {
           "data": {
             "id" : "1000",
-            "question_type" : "multiple_choice",
-            "question" : "What is 1+1 equals to?",
-            "answer_options" : ["1","2","3","4"]
+            "question_type" : "fib",
+            "question" : "Java is a ______ Oriented language",
+            "answer_options" : []
           },
 
           "meta" : {
@@ -19,14 +19,63 @@
           "data": {
             "id" : "1001",
             "question_type" : "multiple_choice",
-            "question" : "What is 1+1 equals to?",
-            "answer_options" : ["1","2","3","4"]
+            "question" : "The correct syntax to print hello world is: A. Print(hello world) B. Print(“Hello world”); C. System.out(“Hello world”); D. System.out.print(“Hello world”)",
+            "answer_options" : ["A","B","C","D"]
           },
 
           "meta" : {
-            "next_question": "-1"
+            "next_question": "1002"
+          }
+        },
+        {
+          "data": {
+            "id" : "1002",
+            "question_type" : "fib",
+            "question" : "What primitive data structure holds a non-floating point number?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "1003"
+          }
+        },
+        {
+          "data": {
+            "id" : "1003",
+            "question_type" : "mc",
+            "question" : "When writing a String backslash-____ is an escape sequence for a new line A. u, B. q C. n D. s",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "1004"
+          }
+        },
+        {
+          "data": {
+            "id" : "1004",
+            "question_type" : "mc",
+            "question" : "Java runs on the Java ____ Machine A. Virtual B. Async C. Old D. Digital",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "1005"
+          }
+        },
+        {
+          "data": {
+            "id" : "1005",
+            "question_type" : "fib",
+            "question" : "Java was developed at a company called ___ Microsystems",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "1006"
           }
         }
+        //TODO add the rest of the quiz data, the id number is one behind what it was in the previous db
       ]},
     {
       "quizId": "200",
