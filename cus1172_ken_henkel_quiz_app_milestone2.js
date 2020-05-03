@@ -60,23 +60,22 @@ app.get('/api/quiz/:quizid/:questionid/:answer', (req,res) => {
     var answer = req.params['answer'];
 
 
-    var filteredQuizQuestionList = questions["quiz_question_data"]
+    var filteredQuizAnswerList = answers["quiz_answer_data"]
         .filter(quiz => quizId === quiz.quizId)
 
-    if(filteredQuizQuestionList.length < 1){
-        res.status(404).send("404: Quiz Not Found")
+    if(filteredQuizAnswerList.length < 1){
+        res.status(404).send("404: Answer Not Found")
     }
 
-    var filteredQuizQuestion = filteredQuizQuestionList[0]["questions"]
-        .filter(question => question.data.id === questionId)
+    var filteredQuizAnswer = filteredQuizAnswerList[0]["answers"]
+        .filter(answer => questionId.question_id === answer.questionId)
 
-    if(filteredQuizQuestion.length < 1){
-        res.status(404).send("404: Quiz Question Not Found")
+    if(filteredQuizAnswer.length < 1){
+        res.status(404).send("404: Quiz Answer Not Found")
     }
 
-    var filteredQuizAnswer = filteredQuizQuestionList[0]["questions"]
-        .filter(question => question.data.id === questionId)
-    res.json(filteredQuizQuestion)
+    res.json(filteredQuizAnswer)
+
 })
 
 //Starts Server
