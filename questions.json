@@ -18,7 +18,7 @@
         {
           "data": {
             "id" : "1001",
-            "question_type" : "multiple_choice",
+            "question_type" : "mc",
             "question" : "The correct syntax to print hello world is: A. Print(hello world) B. Print(“Hello world”); C. System.out(“Hello world”); D. System.out.print(“Hello world”)",
             "answer_options" : ["A","B","C","D"]
           },
@@ -74,7 +74,176 @@
           "meta" : {
             "next_question": "1006"
           }
+        },
+        {
+          "data": {
+            "id" : "1006",
+            "question_type" : "mc",
+            "question" : "A line of java ends with a: A. ; B. > C. // D. =",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "1007"
+          }
+        },
+        {
+          "data": {
+            "id" : "1007",
+            "question_type" : "fib",
+            "question" : "When a double is converted to an int, it is round in which direction?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "1008"
+          }
+        },
+        {
+          "data": {
+            "id" : "1008",
+            "question_type" : "mc",
+            "question" : "Question: To make a comment in java, you would use: A. <! B. // C. – D. ~",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "1009"
+          }
+        },
+        {
+          "data": {
+            "id" : "1009",
+            "question_type" : "fib",
+            "question" : "In a method header, the  ____ keyword indicates that the method will not return anything",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "1010"
+          }
+        },
+        {
+          "data": {
+            "id" : "1010",
+            "question_type" : "mc",
+            "question" : "To increment the variable: int i=0; you would use: A. i++; B. I add C. I inc; D. I+2;",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "1011"
+          }
+        },
+        {
+          "data": {
+            "id" : "1011",
+            "question_type" : "fib",
+            "question" : "The modulus operator returns the _____",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "1012"
+          }
+        },
+        {
+          "data": {
+            "id" : "1012",
+            "question_type" : "fib",
+            "question" : "A function in Java is referred to as a _____",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "1013"
+          }
+        },
+        {
+          "data": {
+            "id" : "1013",
+            "question_type" : "mc",
+            "question" : "Java is a _____ threaded language A. Hard B. Single C. Invisible D. Multi",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "1014"
+          }
+        },
+        {
+          "data": {
+            "id" : "1014",
+            "question_type" : "mc",
+            "question" : "The assignment operator in Java is: A. – B. ~ C. = D. .",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "1015"
+          }
+        },
+        {
+          "data": {
+            "id" : "1015",
+            "question_type" : "fib",
+            "question" : "In java, arrays start an an index of: __",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "1016"
+          }
+        },
+        {
+          "data": {
+            "id" : "1016",
+            "question_type" : "fib",
+            "question" : "To multiply two numbers, you would use the __ operator",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "1017"
+          }
+        },
+        {
+          "data": {
+            "id" : "1017",
+            "question_type" : "mc",
+            "question" : "From the Java Standard Library, you would use the ____ keyword to add it to your project A. Import B. Pkg C. Add D. Library",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "1018"
+          }
+        },
+        {
+          "data": {
+            "id" : "1018",
+            "question_type" : "mc",
+            "question" : "To initialize an array you would declare the type and this operator: A. { } B. [ ] C. < > D. = =",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "1019"
+          }
+        },
+        {
+          "data": {
+            "id" : "1019",
+            "question_type" : "fib",
+            "question" : "To create a new Java class, you would use the keyword _____",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "-1"
+          }
         }
+
         //TODO add the rest of the quiz data, the id number is one behind what it was in the previous db
       ]},
     {
@@ -83,9 +252,9 @@
         {
           "data": {
             "id" : "2000",
-            "question_type" : "multiple_choice",
-            "question" : "What is 1+1 equals to?",
-            "answer_options" : ["1","2","3","4"]
+            "question_type" : "mc",
+            "question" : "An acceptable declaration of an array using Go is: A. array[5] integers B. var arr [10]string C. string[5]; d. 5 string[]",
+            "answer_options" : ["A","B","C","D"]
           },
 
           "meta" : {
