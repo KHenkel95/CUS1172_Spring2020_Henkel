@@ -5,141 +5,101 @@
       "answers": [
         {
           "question_id" : "1000",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "object",
           "feedback" : "Java works around structures called objects"
         },
         {
           "question_id" : "1001",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "D",
           "feedback" : "You want to call the Systems “out” method and “print” it to the console"
         },
         {
           "question_id" : "1002",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "int",
           "feedback" : "The primitive for an integer"
         },
         {
           "question_id" : "1003",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "C",
           "feedback" : "To call a new line, you’d want to use this escape character"
         },
         {
           "question_id" : "1004",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "A",
           "feedback" : "Java is run using a virtualized machine"
         },
         {
           "question_id" : "1005",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "sun",
           "feedback" : "Some might say this company rose everyday, much like something in the sky"
         },
         {
           "question_id" : "1006",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "A",
           "feedback" : "You use this when the line is complete, not when its “semi” done"
         },
         {
           "question_id" : "1007",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "down",
           "feedback" : "Which way is the ground?"
         },
         {
           "question_id" : "1008",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "B",
           "feedback" : "This would “slash” out the comment"
         },
         {
           "question_id" : "1009",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "void",
           "feedback" : "It will return void"
         },
         {
           "question_id" : "1010",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "A",
           "feedback" : "++ adds one to a value"
         },
         {
           "question_id" : "1011",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "remainder",
           "feedback" : "It is not the Quotient"
         },
         {
           "question_id" : "1012",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "method",
           "feedback" : "It is a “method” of doing something"
         },
         {
           "question_id" : "1013",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "D",
           "feedback" : "Java can use “multi”ple threads"
         },
         {
           "question_id" : "1014",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "C",
           "feedback" : "Assignment is almost similar to saying it equals"
         },
         {
           "question_id" : "1015",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "0",
           "feedback" : "The number zero"
         },
         {
           "question_id" : "1016",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "*",
           "feedback" : "It is not “x”"
         },
         {
           "question_id" : "1017",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "A",
           "feedback" : "You need to import it"
         },
         {
           "question_id" : "1018",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "B",
           "feedback" : "An array could be kept in a square"
         },
         {
           "question_id" : "1019",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "class",
           "feedback" : "You may have learned this in class"
         }
@@ -151,141 +111,101 @@
       "answers": [
         {
           "question_id" : "2000",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "B",
           "feedback" : "Arrays get declared as a var first"
         },
         {
           "question_id" : "2001",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "--",
           "feedback" : "It is the same as the decrement operator in java"
         },
         {
           "question_id" : "2002",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "import",
           "feedback" : "Similar to buying a foreign object and shipping it to the United States, you have to import it"
         },
         {
           "question_id" : "2003",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "D",
           "feedback" : "How could you abbreviate formatted?"
         },
         {
           "question_id" : "2004",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "func",
           "feedback" : "Abbreviate the word function"
         },
         {
           "question_id" : "2005",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "after",
           "feedback" : "It does not come before"
         },
         {
           "question_id" : "2006",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "A",
           "feedback" : "You only need to get the time"
         },
         {
           "question_id" : "2007",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "++",
           "feedback" : "It is the same as the increment operator in java"
         },
         {
           "question_id" : "2008",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "After",
           "feedback" : "It is not before"
         },
         {
           "question_id" : "2009",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "A",
           "feedback" : "It uses a colon"
         },
         {
           "question_id" : "2010",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "B",
           "feedback" : "It is the same as the modulus operator in java"
         },
         {
           "question_id" : "2011",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "B",
           "feedback" : "How could you abbreviate boolean?"
         },
         {
           "question_id" : "2012",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "A",
           "feedback" : "An int is numeric"
         },
         {
           "question_id" : "2013",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "for",
           "feedback" : "It is a loop supported in java and not a while loop"
         },
         {
           "question_id" : "2014",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "switch",
           "feedback" : "It is the same as it is in java"
         },
         {
           "question_id" : "2015",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "D",
           "feedback" : "Only curly braces are required"
         },
         {
           "question_id" : "2016",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "defer",
           "feedback" : "It needs to be deferred"
         },
         {
           "question_id" : "2017",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "pointer",
           "feedback" : "It is the same as in C"
         },
         {
           "question_id" : "2018",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "struct",
           "feedback" : "It is the same as in C"
         },
         {
           "question_id" : "2019",
-          "user_answer" : "",
-          "correct" : false,
           "correct_answer": "google",
           "feedback" : "Think of the first two letters of golang and your most used search engine"
         }

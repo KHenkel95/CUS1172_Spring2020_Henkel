@@ -58,6 +58,7 @@ app.get('/api/quiz/:quizid/:questionid/:answer', (req,res) => {
     var quizId = req.params['quizid'];
     var questionId = req.params['questionid'];
     var answer = req.params['answer'];
+    let response;
 
 
     var filteredQuizAnswerList = answers["quiz_answer_data"]
@@ -74,7 +75,16 @@ app.get('/api/quiz/:quizid/:questionid/:answer', (req,res) => {
         res.status(404).send("404: Quiz Answer Not Found")
     }
 
-    res.json(filteredQuizAnswer)
+    response.correct = filteredQuizAnswer[0].correct_answer === answer
+    response.questionId = filteredQuizAnswer[0].question_id
+    response.userAnswer = answer
+    if(response.correct){
+        response.feedback = null;
+    }
+    else{
+        response.feedback = filteredQuizAnswer[0].feedback
+    }
+    res.json(response)
 
 })
 
