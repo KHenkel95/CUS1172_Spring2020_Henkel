@@ -4,7 +4,8 @@
   "description": "Project 4: Individual Project (Milestone 1)\r Deliverable 4.2: Source Code Release Report\r CUS1172\r Spring 2020",
   "main": "cus1172_ken_henkel_quiz_app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node quiz_api.js"
   },
   "repository": {
     "type": "git",
