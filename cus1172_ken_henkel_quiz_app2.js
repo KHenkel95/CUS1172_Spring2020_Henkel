@@ -42,18 +42,19 @@ function startQuiz(quizChoice){
 }
 
 function checkQuestionType(){
-    question_type = null
+    questionType = null
     console.log(json);
-    if(currentQuestion.question_type==="mc") {
-        question_type = "mc";
+    //TODO change this to check data.question_type
+    if(currentQuestion + ".data.question_type"==="mc") {
+        questionType = "mc";
         document.getElementById("mc_buttons").style.visibility = "visible";
     }
     else{
-        question_type = "fib";
+        questionType = "fib";
         document.getElementById("fib_space").value = "";
         document.getElementById("fib_input").style.visibility = "visible";
     }
-    return question_type;
+    return questionType;
 }
 
 function fibEnter(){
@@ -62,8 +63,10 @@ function fibEnter(){
 
 function checkAnswer(answer){
     console.log("answer inputed: " + answer);
+    //TODO change this to answers route answers.correct_answer
     console.log("expected answer : " + currentQuestion.answer);
     if(answer !== currentQuestion.answer){
+        //TODO change this to answers route answers.feedback
         document.querySelector("#result").innerHTML = "INCORRECT: Sorry, you answered this incorrectly. HINT:" + currentQuestion.hint;
 
     }
@@ -84,17 +87,23 @@ function checkAnswer(answer){
 function getNextQuestion(){
 
     if(quizchoice==="java"){
-        currentQuestion = json.java.questions[counter]
-
+        //TODO have these access next question
+        //currentQuestion = json.java.questions[counter]
+        currentQuestion = json + "/api/quiz/100/10" + [counter]
+        nextQuestion = currentQuestion + ".meta.next_question"
     }
     else{
-        currentQuestion = json.golang.questions[counter]
+        //currentQuestion = json.golang.questions[counter]
+        currentQuestion = json + "/api/quiz/200/2000"
     }
-    if(currentQuestion===undefined){
+    //TODO have this check if next_question is -1 to end quiz
+    //if(currentQuestion.meta.next_question===-1){
+    if(nextQuestion===-1){
         endQuiz();
     }
     else{
-        document.getElementById("question").innerHTML = currentQuestion.question;
+        //TODO get this to access the actual question data
+        document.getElementById("question").innerHTML = currentQuestion + ".data.question";
         checkQuestionType();
         counter++;
     }
