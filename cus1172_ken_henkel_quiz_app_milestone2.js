@@ -54,11 +54,11 @@ app.get('/api/quiz/:quizid/:questionid', (req,res) => {
 })
 
 //GET Request Answers by Quiz ID and Question ID
-app.get('/api/quiz/:quizid/:questionid/:answer', (req,res) => {
+app.get('/api/check_answer/:quizid/:questionid/:answer', (req,res) => {
     var quizId = req.params['quizid'];
     var questionId = req.params['questionid'];
     var answer = req.params['answer'];
-    let response;
+    let response = {};
 
 
     var filteredQuizAnswerList = answers["quiz_answer_data"]
@@ -74,7 +74,7 @@ app.get('/api/quiz/:quizid/:questionid/:answer', (req,res) => {
     if(filteredQuizAnswer.length < 1){
         res.status(404).send("404: Quiz Answer Not Found")
     }
-
+    //Object to be returned
     response.correct = filteredQuizAnswer[0].correct_answer === answer
     response.questionId = filteredQuizAnswer[0].question_id
     response.userAnswer = answer
