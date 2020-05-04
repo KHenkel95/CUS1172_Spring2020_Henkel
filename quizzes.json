@@ -3,12 +3,12 @@
     {
     "id": "100",
     "title": "Java Quiz",
-    "description": "Java Quiz for cool enemies of Ken"
+    "description": "20 Question Java Quiz"
     },
     {
       "id": "200",
       "title": "Golang Quiz",
-      "description": "GoLang Quiz for cool friends of Ken"
+      "description": "20 Question GoLang Quiz"
     }
   ]
 }
