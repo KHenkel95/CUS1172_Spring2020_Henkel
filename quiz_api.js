@@ -9,6 +9,7 @@ const quizzes = require('./quizzes.json');
 const questions = require('./questions.json');
 const answers = require('./answers.json');
 
+const PORT = process.env.PORT || 3000
 
 //Defines a route
 app.get('/', function(req, res) {
@@ -89,6 +90,6 @@ app.get('/api/check_answer/:quizid/:questionid/:answer', (req,res) => {
 })
 
 //Starts Server
-app.listen(3000, function() {
-    console.log('Example app listening on port 3000');
+app.listen(PORT, function() {
+    console.log(`Example app listening on port ${PORT}`);
 });
