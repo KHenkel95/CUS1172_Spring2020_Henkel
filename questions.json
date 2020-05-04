@@ -243,8 +243,6 @@
             "next_question": "-1"
           }
         }
-
-        //TODO add the rest of the quiz data, the id number is one behind what it was in the previous db
       ]},
     {
       "quizId": "200",
@@ -264,9 +262,225 @@
         {
           "data": {
             "id" : "2001",
+            "question_type" : "fib",
+            "question" : "What is the operator to decrement a number by one?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2002"
+          }
+        },
+        {
+          "data": {
+            "id" : "2002",
+            "question_type" : "fib",
+            "question" : "What is the keyword to add a package to a golang file?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2003"
+          }
+        },
+        {
+          "data": {
+            "id" : "2003",
+            "question_type" : "mc",
+            "question" : "What is the package that must be importted to use any formatted I/O with golang? A. string B. io C. String D. fmt",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "2004"
+          }
+        },
+        {
+          "data": {
+            "id" : "2004",
+            "question_type" : "fib",
+            "question" : "What is the keyword to declare a function?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2005"
+          }
+        },
+        {
+          "data": {
+            "id" : "2005",
+            "question_type" : "fib",
+            "question" : "The return type of a function comes before or after the function name and parameters?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2006"
+          }
+        },
+        {
+          "data": {
+            "id" : "2006",
+            "question_type" : "mc",
+            "question" : "What package has to be imported to get the current time? A. time B. clock C. Sundial D. Hourglass",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "2007"
+          }
+        },
+        {
+          "data": {
+            "id" : "2007",
+            "question_type" : "fib",
+            "question" : "What is the operator to increment a number by one?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2008"
+          }
+        },
+        {
+          "data": {
+            "id" : "2008",
+            "question_type" : "fib",
+            "question" : "The type of parameter comes after or before the variables name?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2009"
+          }
+        },
+        {
+          "data": {
+            "id" : "2009",
+            "question_type" : "mc",
+            "question" : "What is the operator for a short assignment? A. := B. = C. == D. ===",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "2010"
+          }
+        },
+        {
+          "data": {
+            "id" : "2010",
+            "question_type" : "mc",
+            "question" : "What is the modulus operator? A. & B. % C. @ D. /",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "2011"
+          }
+        },
+        {
+          "data": {
+            "id" : "2011",
+            "question_type" : "mc",
+            "question" : "What is the basic type of a variable that can only be true or false? A. boolean B. bool C. truefalse D. bit",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "2012"
+          }
+        },
+        {
+          "data": {
+            "id" : "2012",
             "question_type" : "multiple_choice",
-            "question" : "What is 1+1 equals to?",
-            "answer_options" : ["1","2","3","4"]
+            "question" : "An int declared but not initlaized is given a value of: A. 0 B. zero C. null d. one",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "2013"
+          }
+        },
+        {
+          "data": {
+            "id" : "2013",
+            "question_type" : "mc",
+            "question" : "The loop supported by golang is a ___ loop",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "2014"
+          }
+        },
+        {
+          "data": {
+            "id" : "2014",
+            "question_type" : "fib",
+            "question" : "A statement with cases is called a ______ statement",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2015"
+          }
+        },
+        {
+          "data": {
+            "id" : "2015",
+            "question_type" : "mc",
+            "question" : "An If statement needs to be surrounded by: A. () B. // C. <> D. {}",
+            "answer_options" : ["A","B","C","D"]
+          },
+
+          "meta" : {
+            "next_question": "2016"
+          }
+        },
+        {
+          "data": {
+            "id" : "2016",
+            "question_type" : "fib",
+            "question" : "A _____ statement makes the function wait until the function it is within runs first",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2017"
+          }
+        },
+        {
+          "data": {
+            "id" : "2017",
+            "question_type" : "fib",
+            "question" : "A _______ holds the memory address of a value?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2018"
+          }
+        },
+        {
+          "data": {
+            "id" : "2018",
+            "question_type" : "fib",
+            "question" : "What is a collection of fields, similar to an object, in golang?",
+            "answer_options" : []
+          },
+
+          "meta" : {
+            "next_question": "2019"
+          }
+        },
+        {
+          "data": {
+            "id" : "2019",
+            "question_type" : "fib",
+            "question" : "Golang was created at which popular tech company?",
+            "answer_options" : []
           },
 
           "meta" : {

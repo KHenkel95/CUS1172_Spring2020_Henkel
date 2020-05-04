@@ -90,7 +90,7 @@
         "question_type": "fib",
         "question": "A function in Java is referred to as a _____",
         "answer": "method",
-        "hint": ": It is a “method” of doing something"
+        "hint": "It is a “method” of doing something"
       },
       {
         "id": 14,
@@ -150,13 +150,141 @@
       "id": 1,
       "question_type": "mc",
       "question": "An acceptable declaration of an array using Go is: A. array[5] integers B. var arr [10]string C. string[5]; d. 5 string[]",
-      "answer": "B"
+      "answer": "B",
+      "hint": "Arrays get declared as a var first"
     },
       {
         "id": 2,
         "question_type": "fib",
-        "question": "another golang question",
-        "answer": "another notcoolkid"
+        "question": "What is the operator to decrement a number by one?",
+        "answer": "--",
+        "hint": "It is the same as the decrement operator in java"
+      },
+      {
+        "id": 3,
+        "question_type": "fib",
+        "question": "What is the keyword to add a package to a golang file?",
+        "answer": "import",
+        "hint": "Similar to buying a foreign object and shipping it to the United States, you have to import it"
+      },
+      {
+        "id": 4,
+        "question_type": "mc",
+        "question": "What is the package that must be importted to use any formatted I/O with golang? A. string B. io C. String D. fmt",
+        "answer": "D",
+        "hint": "How could you abbreviate formatted?"
+      },
+      {
+        "id": 5,
+        "question_type": "fib",
+        "question": "What is the keyword to declare a function?",
+        "answer": "func",
+        "hint": "Abbreviate the word function"
+      },
+      {
+        "id": 6,
+        "question_type": "fib",
+        "question": "The return type of a function comes before or after the function name and parameters?",
+        "answer": "after",
+        "hint": "It does not come before"
+      },
+      {
+        "id": 7,
+        "question_type": "mc",
+        "question": "What package has to be imported to get the current time? A. time B. clock C. Sundial D. Hourglass",
+        "answer": "A",
+        "hint": "You only need to get the time"
+      },
+      {
+        "id": 8,
+        "question_type": "fib",
+        "question": "What is the operator to increment a number by one?",
+        "answer": "++",
+        "hint": "It is the same as the increment operator in java"
+      },
+      {
+        "id": 9,
+        "question_type": "fib",
+        "question": "The type of parameter comes after or before the variables name?",
+        "answer": "After",
+        "hint": "It is not before"
+      },
+      {
+        "id": 10,
+        "question_type": "mc",
+        "question": "What is the operator for a short assignment? A. := B. = C. == D. ===",
+        "answer": "A",
+        "hint": "It uses a colon"
+      },
+      {
+        "id": 11,
+        "question_type": "fib",
+        "question": "What is the modulus operator? A. & B. % C. @ D. /",
+        "answer": "B",
+        "hint": "It is the same as the modulus operator in java"
+      },
+      {
+        "id": 12,
+        "question_type": "mc",
+        "question": "What is the basic type of a variable that can only be true or false? A. boolean B. bool C. truefalse D. bit",
+        "answer": "B",
+        "hint": "How could you abbreviate boolean?"
+      },
+      {
+        "id": 13,
+        "question_type": "mc",
+        "question": "An int declared but not initlaized is given a value of: A. 0 B. zero C. null d. one",
+        "answer": "A",
+        "hint": "An int is numeric"
+      },
+      {
+        "id": 14,
+        "question_type": "fib",
+        "question": "The loop supported by golang is a ___ loop",
+        "answer": "for",
+        "hint": "It is a loop supported in java and not a while loop"
+      },
+      {
+        "id": 15,
+        "question_type": "fib",
+        "question": "A statement with cases is called a ______ statement",
+        "answer": "switch",
+        "hint": "It is the same as it is in java"
+      },
+      {
+        "id": 16,
+        "question_type": "mc",
+        "question": "An If statement needs to be surrounded by: A. () B. // C. <> D. {}",
+        "answer": "D",
+        "hint": "Only curly braces are required"
+      },
+      {
+        "id": 17,
+        "question_type": "fib",
+        "question": "A _____ statement makes the function wait until the function it is within runs first",
+        "answer": "defer",
+        "hint": "It needs to be deferred"
+      },
+      {
+        "id": 18,
+        "question_type": "fib",
+        "question": "A _______ holds the memory address of a value?",
+        "answer": "pointer",
+        "hint": "It is the same as in C"
+      },
+      {
+        "id": 19,
+        "question_type": "fib",
+        "question": "What is a collection of fields, similar to an object, in golang?",
+        "answer": "struct",
+        "hint": "It is the same as in C"
+      },
+      {
+        "id": 20,
+        "question_type": "fib",
+        "question": "Golang was created at which popular tech company?",
+        "answer": "google",
+        "hint": "Think of the first two letters of golang and your most used search engine"
       }
     ]
   }
