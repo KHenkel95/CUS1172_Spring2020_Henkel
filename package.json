@@ -2,7 +2,7 @@
   "name": "cus1172_spring2020_henkel",
   "version": "1.0.0",
   "description": "Project 4: Individual Project (Milestone 1)\r Deliverable 4.2: Source Code Release Report\r CUS1172\r Spring 2020",
-  "main": "cus1172_ken_henkel_quiz_app.js",
+  "main": "quiz_api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
