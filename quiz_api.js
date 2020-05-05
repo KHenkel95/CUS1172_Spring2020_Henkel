@@ -66,21 +66,23 @@ app.get('/api/check_answer/:quizid/:questionid/:answer', (req,res) => {
     var answer = req.params['answer'];
     let response = {};
 
-    console.log(questionId)
+    console.log("question id" + questionId)
 
     var filteredQuizAnswerList = answers["quiz_answer_data"]
         .filter(quiz => quizId === quiz.quizId)
 
     if(filteredQuizAnswerList.length < 1){
-        res.status(404).send("404: Answer Not Found")
+        res.status(404).send("404: Quiz Not Found")
     }
+
+    console.log("answers: " + filteredQuizAnswerList[0])
 
     var filteredQuizAnswer = filteredQuizAnswerList[0]["answers"]
         .filter(answer => questionId === answer.questionId)
 
     console.log(filteredQuizAnswer);
     console.log(filteredQuizAnswer[0]);
-    if(filteredQuizAnswer.length < 1){
+    if(filteredQuizAnswer === []){
         res.status(404).send("404: Quiz Answer Not Found")
     }
     //Object to be returned
