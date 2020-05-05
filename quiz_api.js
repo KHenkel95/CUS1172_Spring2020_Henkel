@@ -75,7 +75,7 @@ app.get('/api/check_answer/:quizid/:questionid/:answer', (req,res) => {
     }
 
     var filteredQuizAnswer = filteredQuizAnswerList[0]["answers"]
-        .filter(answer => questionId.question_id === answer.questionId)
+        .filter(answer => questionId === answer.questionId)
 
     console.log(filteredQuizAnswer[0]);
     if(filteredQuizAnswer.length < 1){
