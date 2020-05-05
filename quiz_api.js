@@ -51,7 +51,7 @@ app.get('/api/quiz/:quizid/:questionid', (req,res) => {
     if(filteredQuizQuestion.length < 1){
         res.status(404).send("404: Quiz Question Not Found")
     }
-    res.json(filteredQuizQuestion)
+    res.json(filteredQuizQuestion[0])
 })
 
 //GET Request Answers by Quiz ID and Question ID
