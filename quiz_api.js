@@ -81,6 +81,7 @@ app.get('/api/check_answer/:quizid/:questionid/:answer', (req,res) => {
         res.status(404).send("404: Quiz Answer Not Found")
     }
     //Object to be returned
+    console.log(`Server answer: ${filteredQuizAnswer[0].correct_answer}, user answer: ${answer}`)
     response.correct = filteredQuizAnswer[0].correct_answer === answer
     response.questionId = filteredQuizAnswer[0].question_id
     response.userAnswer = answer
