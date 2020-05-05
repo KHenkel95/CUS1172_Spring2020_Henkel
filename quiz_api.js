@@ -77,6 +77,7 @@ app.get('/api/check_answer/:quizid/:questionid/:answer', (req,res) => {
     var filteredQuizAnswer = filteredQuizAnswerList[0]["answers"]
         .filter(answer => questionId.question_id === answer.questionId)
 
+    console.log(filteredQuizAnswer[0]);
     if(filteredQuizAnswer.length < 1){
         res.status(404).send("404: Quiz Answer Not Found")
     }
