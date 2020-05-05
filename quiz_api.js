@@ -16,14 +16,10 @@ app.get('/', function(req, res) {
     res.send('<h1>Welcome to the CUS1172 Quizzes</h1>');
 });
 
-app.all('/', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    next()
-});
-
 //GET Request Quiz List
 app.get('/api/quiz/list', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.send(quizzes);
 })
 
@@ -31,7 +27,8 @@ app.get('/api/quiz/list', (req, res) => {
 //GET Request Quiz by Quiz ID
 app.get('/api/quiz/:quizid', (req,res) => {
 
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     var quizId = req.params['quizid'];
 
     requestedQuiz = quizzes["quizzes"].filter(quiz => quizId === quiz.id);
@@ -41,6 +38,8 @@ app.get('/api/quiz/:quizid', (req,res) => {
 
 //GET Request Quiz Question by Quiz ID and Question ID
 app.get('/api/quiz/:quizid/:questionid', (req,res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     var quizId = req.params['quizid'];
     var questionId = req.params['questionid'];
 
@@ -67,6 +66,8 @@ app.get('/api/quiz/:quizid/:questionid', (req,res) => {
 
 //GET Request Answers by Quiz ID and Question ID
 app.get('/api/check_answer/:quizid/:questionid/:answer', (req,res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     var quizId = req.params['quizid'];
     var questionId = req.params['questionid'];
     var answer = req.params['answer'];
