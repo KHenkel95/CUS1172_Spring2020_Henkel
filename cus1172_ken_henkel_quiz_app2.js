@@ -74,8 +74,11 @@ async function checkAnswer(answer){
     if (response.ok) {
         answerResults = await response.json();
         if(!(answerResults.correct)){
-            document.querySelector("#result").innerHTML = "INCORRECT: Sorry, you answered this incorrectly. HINT:" + answerResults.feedback;
-
+            document.querySelector("#result").innerHTML = "";
+            document.getElementById("mc_buttons").style.visibility = "hidden";
+            document.getElementById("fib_input").style.visibility = "hidden";
+            alert("INCORRECT: Sorry, you answered this incorrectly. HINT:" + answerResults.feedback)
+            getNextQuestion();
         }
         else{
             document.getElementById("mc_buttons").style.visibility = "hidden";
@@ -117,9 +120,8 @@ async function getNextQuestion(){
 
 function endQuiz(){
 
-    alert("End quiz, reloading page, good job!");
+    alert("End quiz, reloading page you answered " + score +" out of 20 correctly");
     location.reload();
-
 }
 
 function updateScoreboard(){
