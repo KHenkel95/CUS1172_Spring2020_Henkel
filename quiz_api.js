@@ -16,6 +16,12 @@ app.get('/', function(req, res) {
     res.send('<h1>Welcome to the CUS1172 Quizzes</h1>');
 });
 
+app.all('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next()
+});
+
 //GET Request Quiz List
 app.get('/api/quiz/list', (req, res) => {
     res.send(quizzes);
