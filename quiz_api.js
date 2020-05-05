@@ -66,6 +66,7 @@ app.get('/api/check_answer/:quizid/:questionid/:answer', (req,res) => {
     var answer = req.params['answer'];
     let response = {};
 
+    console.log(questionId)
 
     var filteredQuizAnswerList = answers["quiz_answer_data"]
         .filter(quiz => quizId === quiz.quizId)
