@@ -45,13 +45,18 @@ app.get('/api/quiz/:quizid/:questionid', (req,res) => {
         res.status(404).send("404: Quiz Not Found")
     }
 
-    var filteredQuizQuestion = filteredQuizQuestionList[0]["questions"]
-        .filter(question => question.data.id === questionId)
-
-    if(filteredQuizQuestion.length < 1){
-        res.status(404).send("404: Quiz Question Not Found")
+    if(questionId === "first"){
+        res.json(filteredQuizQuestionList[0]["questions"][0])
     }
-    res.json(filteredQuizQuestion[0])
+    else{
+        var filteredQuizQuestion = filteredQuizQuestionList[0]["questions"]
+            .filter(question => question.data.id === questionId)
+
+        if(filteredQuizQuestion.length < 1){
+            res.status(404).send("404: Quiz Question Not Found")
+        }
+        res.json(filteredQuizQuestion[0])
+    }
 })
 
 //GET Request Answers by Quiz ID and Question ID
